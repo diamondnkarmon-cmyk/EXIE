@@ -1,40 +1,51 @@
 # EXIE — Express Innovation Enterprise
 
-Responsive static website for EXIE, a private service provider based in Bend and Stop, Barnesville, Liberia.
+This is the complete static website package for EXIE. The HTML, CSS, JavaScript, and image files are included.
 
-## Files
-- `index.html` — page content and section navigation
-- `styles.css` — layout, desktop/mobile styling, and sticky navigation
-- `script.js` — navigation behavior and current year
-- `assets/images/` — local images and logos
-- `.nojekyll` — lets GitHub Pages publish all files without Jekyll processing
+## Important: make photos show on GitHub Pages
+
+1. Download and **extract** this ZIP on your computer. Do not upload the ZIP file itself as the website.
+2. Open the extracted folder. You should see `index.html`, `styles.css`, `script.js`, `.nojekyll`, and the `assets` folder together.
+3. In your GitHub repository, upload the **contents inside this folder**. Keep the `assets` folder and all its subfolders intact.
+4. The repository root should look like this:
+
+   ```text
+   index.html
+   styles.css
+   script.js
+   .nojekyll
+   assets/
+     images/
+       exie-logo.png
+       exie-hero-american-flag.png
+       ...other images...
+       pricing/
+         single-applicant.jpg
+         married-couple.jpg
+         child-dependent.jpg
+         email-creation.svg
+   ```
+
+5. Do not rename image files or change uppercase/lowercase letters. GitHub Pages runs on a case-sensitive server.
+6. Go to **Settings → Pages**, choose **Deploy from a branch**, select `main` and `/(root)`, then save. Wait for deployment to finish.
+7. Open the published site and hard-refresh it with `Ctrl + F5`.
+
+### If images still do not appear
+- Confirm that the repository contains `assets/images/` and its files—not just `index.html`.
+- Open a photo directly by adding its relative path to your site URL, for example `assets/images/exie-logo.png`. For a project site, keep the repository path before `assets/`.
+- Check the browser developer console/network panel for 404 errors; the missing path usually reveals a folder or filename mismatch.
 
 ## Preview locally
-Open `index.html` in a browser. All site images are stored locally in `assets/images/`.
+Open `index.html` in a browser after extracting the entire ZIP. Keep the `assets` folder beside it.
 
-## Publish with GitHub Pages
-1. Create a GitHub repository.
-2. Upload the **contents of this folder** so `index.html`, `styles.css`, `script.js`, `.nojekyll`, and `assets/` are at the repository root.
-3. Open the repository's **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Select the `main` branch and `/(root)`, then save.
-6. Wait for GitHub Pages to publish and open the URL shown in Settings → Pages.
+## Website contents
+- `index.html` — page content and navigation
+- `styles.css` — layout, responsive styling, and sticky navigation
+- `script.js` — navigation behavior and current year
+- `assets/images/` — logos, photo studio images, office photos, pricing images, testimonials, and hero background
+- `.nojekyll` — disables Jekyll processing for GitHub Pages
 
-Do not upload only the parent folder with the website nested inside it; `index.html` should be at the selected publishing root.
+## Important service notice
+EXIE is an independent private service provider, not a U.S. government agency. DV entry is free when applicants submit it themselves. EXIE's fees are private service charges, and selection or visa approval is not guaranteed. Check current official instructions at https://dvprogram.state.gov/ and https://travel.state.gov/content/travel/en/us-visas/immigrate/diversity-visa-program-entry.html.
 
-## Mobile navigation
-On phones, the navigation is a compact sticky horizontal strip. Swipe left or right on the strip to reach all section links. It stays available while scrolling without occupying several rows of the screen. Section headings account for the sticky bar so they are not hidden when a link is tapped.
-
-## Before publishing
-- Confirm the service charges, especially what the additional US$2.00 covers.
-- Confirm phone/WhatsApp numbers and location wording.
-- Use testimonial posters only with permission.
-- Check DV-program statements against current official instructions; requirements can change.
-- This is a static website. It does not collect form submissions or store customer data and has no database/backend.
-
-## Important DV notice
-EXIE is an independent private service provider, not a U.S. government agency and not affiliated with the U.S. Department of State or U.S. Embassy in Monrovia. Official DV entry is free when applicants submit it themselves through the official website. EXIE charges for optional private assistance. No service provider can guarantee selection or visa approval.
-
-Official resources:
-- https://dvprogram.state.gov/
-- https://travel.state.gov/content/travel/en/us-visas/immigrate/diversity-visa-program-entry.html
+This is a static website. It does not process registrations, collect form submissions, or store customer data in a database.
